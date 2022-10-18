@@ -82,33 +82,48 @@ console.log("main.js");
 // paskaiciuoti triju skirtingu kambariu sienu plotus ir juos atspausdinti i html su pries tai aprasyta funkcija.
 
 // Print function
-function PrintToHtml(elementas) {
-  const h2El = document.createElement("h2");
-  h2El.textContent = elementas;
-  document.body.append(h2El);
-}
+// function PrintToHtml(elementas) {
+//   const h2El = document.createElement("h2");
+//   h2El.textContent = elementas;
+//   document.body.append(h2El);
+// }
 
-function siena(ilgis, aukstis) {
-  let plotas = `ilgis ${ilgis} * aukstis ${aukstis} = plotas ${
-    ilgis * aukstis
-  }`;
-  PrintToHtml(plotas);
-  return plotas;
-}
+// function siena(ilgis, aukstis) {
+//   let plotas = `ilgis ${ilgis} * aukstis ${aukstis} = plotas ${
+//     ilgis * aukstis
+//   }`;
+//   PrintToHtml(plotas);
+//   return plotas;
+// }
 
-let siena1 = siena(5, 10);
-// console.log("siena1 ===", siena1);
-// PrintToHtml(siena1);
+// let siena1 = siena(5, 10);
+// // console.log("siena1 ===", siena1);
+// // PrintToHtml(siena1);
 
-let siena2 = siena(15, 8);
-// console.log("siena2 ===", siena2);
-// PrintToHtml(siena2);
+// let siena2 = siena(15, 8);
+// // console.log("siena2 ===", siena2);
+// // PrintToHtml(siena2);
 
-let siena3 = siena(13, 100);
-// console.log("siena3 ===", siena3);
-// PrintToHtml(siena3);
+// let siena3 = siena(13, 100);
+// // console.log("siena3 ===", siena3);
+// // PrintToHtml(siena3);
 
 //     1.parasyti funkcija multi kuri sudaugina pirma parametra su antru ir grazina
+
+function toTest(Fun) {
+  let FunToSee = Fun;
+  console.log(FunToSee);
+}
+
+function multiply(x, y) {
+  let equal = ` x ${x} * y ${y} = ${x * y}`;
+  return equal;
+}
+
+toTest(multiply(5, 5));
+toTest(multiply(15, 20));
+toTest(multiply(8, 1));
+toTest(multiply(3, 7));
 
 //     2.parasyti funkcija divide kuri padalina pirma parametra is antro ir grazina
 
